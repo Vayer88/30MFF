@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Beatly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:YOPQ@40..300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- imported font -->
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@700,40..300&display=swap" rel="stylesheet"> 
+    <!-- for the drum logo -->
+    <script src="https://kit.fontawesome.com/54c19f7038.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <a id="homeLink"></a> <!-- anchor tag for the home section -->
+    <main>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="drum logo.jpeg" id="navbar__logo">
+                    <i class="fa-solid fa-drum"></i>Beatly</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#homeLink" class="navbar__links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#aboutLink" class="navbar__links" id="about-page">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#genreLink" class="navbar__links" id="services-page">Genres</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="new.html" class="button" id="signup">Sign Up</a> <!-- link to the new.html page, as sign up page is irrelevant in the scope of the class -->
+                    </li>
+            </div>
+        </nav>
+
+        <div class="main">
+            <div class="main__container">
+                <div class="main__content">
+                    <h1>Beatly</h1>
+                    <h2>Drumming</h2>
+                    <p>Beats for everyone</p>
+                    <button class="main__btn">
+                    <a href="#videoLink">Get Started</a> <!-- link to the video section -->
+                    </button>
+                </div>
+                <div class="main__img--container">
+                    <img src="imgs/frontpic.svg" alt="picture" id="main__img">  <!-- image for the main section -->
+                </div>
+            </div>
+        </div>
+
+        <a id="genreLink"></a> <!-- anchor tag for the genre section -->
+        <div class="genres">
+            <h1>Every man to his taste</h1>
+            <div class="genres__container"> <!-- div for genre display space -->
+                <div class="genres__card" id="div1" style="display:block"> <!-- the default genre card (POP) -->
+                    <h2>POP</h2>
+                    <p>Vibe With Friends</p>
+                    <button onclick=show()>What's Next?</button>
+                </div>
+                <div class="genres__card" id="div2" style="display:none">
+                    <h2>ROCK</h2>
+                    <p>Go Hard</p>
+                    <button onclick=show()>What's Next?</button>
+                </div>
+                <div class="genres__card" id="div3" style="display:none">
+                    <h2>JAZZ</h2>
+                    <p>Relax & Enjoy</p>
+                    <button onclick=show()>What's Next?</button>
+                </div>
+                <div class="genres__card" id="div4" style="display:none">
+                    <h2>EDM</h2>
+                    <p>Free Your Body</p>
+                    <button onclick=show()>What's Next?</button>
+                </div>
+            </div>
+        </div>
+
+    
+        <a id="videoLink"></a> <!-- anchor tag for the video section -->
+        <div class="videosection">
+            <h1>Learn from the best</h1>
+            <div class="videosection__container">
+                <div class="videosection__video">
+                <!-- embedded video for the video section -->
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HtnBWmOw81E?si=uyErWub8BzR7Ca7O" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <a id="aboutLink"></a> <!-- anchor tag for the about section -->
+    <footer>
+        <div class="footer__container">
+            <div class="footer__links">
+                <div class="footer__link--wrapper">
+                    <div class="footer__link--items"> <!-- footer links -->
+                        <h2>About Us</h2> 
+                        <a href="new.html">How it works</a>
+                        <a href="new.html">Testimonials</a>
+                        <a href="new.html">Coaches</a>
+                        <a href="new.html">Collaborations</a>
+                        <a href="new.html">Terms of Service</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>Contact Us</h2>
+                        <a href="new.html">Contact</a>
+                        <a href="new.html">Support</a>
+                        <a href="new.html">Sponsorships</a>
+                    </div>
+                </div>
+                <div class="footer__link--wrapper"> 
+                    <div class="footer__link--items"> 
+                        <h2>Content</h2>
+                        <a href="new.html">Submit Video</a>
+                        <a href="new.html">Ambassadors</a>
+                        <a href="new.html">Become A Coach</a>
+                        <a href="new.html">Influencers</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>Social Media</h2>
+                        <a href="new.html">Instagram</a>
+                        <a href="new.html">Facebook</a>
+                        <a href="new.html">Youtube</a>
+                        <a href="new.html">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <section class="social__media"> <!-- social media section -->
+                <div class="social__media--wrap">
+                    <div class="footer__logo">
+                        <a href="homeLink" id="footer__logo">
+                            <i class="fa-solid fa-drum"></i>Beatly</a> <!-- drum logo in the footer-->
+                    </div>
+                    <p class="website__rights">© Beatly 2024. All rights reserved</p> <!-- footer rights -->
+                    <div class="social__icons">
+                        <!-- social media icons imported -->
+                        <a href="new.html" class="social__icon--link" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="new.html" class="social__icon--link" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="new.html" class="social__icon--link" target="_blank" aria-label="Youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>    
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
